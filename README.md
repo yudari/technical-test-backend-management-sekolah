@@ -29,7 +29,7 @@ Repositori ini berisi RESTful API untuk mengelola sistem sekolah berdasarkan soa
 1. **Kloning repositori**
 
    ```bash
-   git clone https://github.com/your-username/management-sekolah-api.git
+   git clone https://github.com/yudari/technical-test-backend-management-sekolah.git
 2. **Install Package .NET**
    dotnet restore
 
