@@ -6,7 +6,7 @@ Repositori ini berisi API RESTful untuk mengelola sistem sekolah berdasarkan soa
 1. [Fitur](#fitur)
 2. [Teknologi](#teknologi)
 3. [Instalasi](#instalasi)
-4. [Konfigutas](#konfigurasi)
+4. [Konfigurasi](#konfigurasi)
 5. [API Endpoints](#api-endpoints)
 6. [Authentikasi](#authentikasi)
 7. [Testing](#testing)
