@@ -33,8 +33,27 @@ Repositori ini berisi API RESTful untuk mengelola sistem sekolah berdasarkan soa
 1. **Kloning repositori**
 
    ```bash
-   git clone https://github.com/username/repository.git
-2. **Masuk ke direktori proyek**
-   cd repository
+   git clone https://github.com/your-username/management-sekolah-api.git
+2. **Install Package .NET**
+   dotnet restore
 
-3. 
+3. **Jalankan perintah migrasi database**
+   dotnet ef database update
+
+4. **Jalankan aplikasi backend nya**
+   dotnet run
+
+## Konfigurasi
+
+di konfigurasi file appsettings.json, ubah pengaturan jwt, koneksi database, dan logging:
+"Jwt": {
+  "Key": "pastikan ini menggunakan key yang panjang",
+  "Issuer": "managementsekolah",
+  "Audience": "managementsekolahusers",
+  "Subject": "managementsekolahsubject"
+}
+
+## API Endpoints
+
+
+
