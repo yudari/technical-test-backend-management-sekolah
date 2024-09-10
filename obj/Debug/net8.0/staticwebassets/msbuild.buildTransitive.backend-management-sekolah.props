@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/backend-management-sekolah.props" />
+</Project>
