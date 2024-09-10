@@ -1,5 +1,5 @@
-# Technical Test Backend Management Sekolah
-Repositori ini berisi API RESTful untuk mengelola sistem sekolah berdasarkan soal Technical Test https://docs.google.com/document/d/1JjDoGiJHQfGGIktLK64zjVAl6FDk1SBXBA6NwHD40sg/edit. API ini dibangun menggunakan ASP.NET Core dengan autentikasi berbasis JWT. API ini memiliki fitur operasi CRUD untuk berbagai entitas, seperti siswa, guru, kelas, dan mata pelajaran, dengan mengikuti prinsip Clean Architecture. Koneksi ke basis data menggunakan PostgreSQL.
+# Technical Test Backend Management Sekolah - Yudha Satria
+Repositori ini berisi RESTful API untuk mengelola sistem sekolah berdasarkan soal Technical Test https://docs.google.com/document/d/1JjDoGiJHQfGGIktLK64zjVAl6FDk1SBXBA6NwHD40sg/edit. API ini dibangun menggunakan ASP.NET Core dengan autentikasi berbasis JWT. API ini memiliki fitur operasi CRUD untuk berbagai entitas, seperti siswa, guru, kelas, dan mata pelajaran, dengan mengikuti prinsip Clean Architecture. Koneksi ke basis data menggunakan PostgreSQL.
 
 ## Table of Contents
 
@@ -9,10 +9,6 @@ Repositori ini berisi API RESTful untuk mengelola sistem sekolah berdasarkan soa
 4. [Konfigurasi](#konfigurasi)
 5. [API Endpoints](#api-endpoints)
 6. [Authentikasi](#authentikasi)
-7. [Testing](#testing)
-8. [Swagger UI](#swagger-ui)
-9. [Contributing](#contributing)
-10. [License](#license)
 
 ## Fitur
 
@@ -54,6 +50,18 @@ di konfigurasi file appsettings.json, ubah pengaturan jwt, koneksi database, dan
 }
 
 ## API Endpoints
+untuk melihat dokumentasi endpointnya setelah menjalankan backend nya bisa ketik url berikut http://localhost:5076/ di browser chrome
 
-
+## Authentikasi
+API ini menggunakan JWT  (JSON Web tokens) untuk authentikasinya. setelah berhasil login, sebuah token akan dibuat dan token ini harus di passing kedalam parameter header yang bernama Authorization, untuk caranya : 
+Authorization: Bearer {token_login}
+### Contoh menggunakan Curl
+curl -X POST "http://localhost:5076/api/Student" \
+  -H "Authorization: Bearer token_login" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "id": 234,
+    "studentName": "Yudha Satria",
+    "dateBirth": "2000-02-24T05:07:09.096Z"
+  }'
 
