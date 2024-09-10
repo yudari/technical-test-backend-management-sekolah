@@ -14,3 +14,27 @@ Repositori ini berisi API RESTful untuk mengelola sistem sekolah berdasarkan soa
 9. [Contributing](#contributing)
 10. [License](#license)
 
+## Fitur
+
+- **CRUD**: Menambahkan, membaca, memperbarui, dan menghapus entitas seperti siswa, guru, kelas, dan mata pelajaran.
+- **Autentikasi**: Pengguna dapat masuk menggunakan JWT untuk mendapatkan akses ke API.
+- **Role-based Authorization**: Kontrol akses berdasarkan peran pengguna.
+- **Swagger UI**: Antarmuka pengguna untuk menguji API secara langsung.
+
+## Teknologi
+
+- **ASP.NET Core**: Framework untuk membangun API.
+- **JWT**: Json Web Token untuk autentikasi.
+- **PostgreSQL**: Sistem manajemen basis data relasional.
+- **Clean Architecture**: Struktur kode yang terorganisir dengan baik untuk pemeliharaan dan skalabilitas.
+
+## Instalasi
+
+1. **Kloning repositori**
+
+   ```bash
+   git clone https://github.com/username/repository.git
+2. **Masuk ke direktori proyek**
+   cd repository
+
+3. 
